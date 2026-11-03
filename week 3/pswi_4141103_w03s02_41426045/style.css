@@ -1,0 +1,10 @@
+input:focus-visible, select:focus-visible,
+textarea:focus-visible, button:focus-visible {
+ outline: 3px solid #1791d3;
+ outline-offset: 3px;
+}
+.card p { color: rgb(51, 112, 193); }
+.notice { color: rgb(64, 222, 220); }
+
+.card { width: 240px; padding: 16px;
+ border: 2px solid #445; margin: 12px; }

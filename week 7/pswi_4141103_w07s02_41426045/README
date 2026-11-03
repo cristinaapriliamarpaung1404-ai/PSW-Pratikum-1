@@ -1,0 +1,25 @@
+Nama : Cristina Aprilia Marpaung
+NIM : 41426045
+Prodi : TRPL
+
+
+1. Navigasi Konten
+Pengujian: Saya mencoba semua link pada halaman index.html, daftar.html, dan kegiatan.html.
+Hasil: Semua link dapat diklik dan mengarah ke halaman yang sesuai. Tombol Back berfungsi untuk kembali ke halaman sebelumnya, sedangkan tombol Forward berfungsi untuk membuka kembali halaman yang sebelumnya ditinggalkan.
+
+2. Path dan Aset
+Pengujian: Saya memeriksa gambar melalui DevTools pada bagian Network.
+Hasil: Semua gambar berhasil dimuat dengan status 200 dan tidak ditemukan error 404. Saya juga memperhatikan penulisan huruf besar dan kecil pada nama file agar gambar dapat ditampilkan dengan benar di berbagai perangkat. Selain itu, path gambar tidak menggunakan alamat drive Windows sehingga proyek lebih mudah dipindahkan ke perangkat lain.
+
+3. Audit Keseluruhan
+Halaman yang diuji: index.html, daftar.html, dan kegiatan.html.
+Pengujian: Saya menguji penggunaan keyboard, ukuran layar 320px dan 1200px, serta tampilan saat diperbesar (zoom).
+Hasil: Navigasi menggunakan tombol Tab berfungsi dengan baik. Tampilan website menyesuaikan ukuran layar, baik pada 320px maupun 1200px. Saat diperbesar, teks dan tampilan halaman juga menyesuaikan sehingga konten tetap dapat dibaca.
+
+4. Validasi HTML
+Pengujian: Saya memeriksa semua file HTML menggunakan HTML Validator.
+Hasil: Semua file HTML berhasil divalidasi tanpa menampilkan kesalahan (error)
+
+
+5. AI Use Statement
+Saya menggunakan AI untuk membantu memahami kode dan menyelesaikan kendala selama pengerjaan website. Salah satu contohnya adalah memahami path gambar dan cara memeriksa file gambar melalui DevTools. Saya tetap memeriksa dan menguji hasilnya secara langsung untuk memastikan website berjalan dengan baik.

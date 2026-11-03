@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pertama Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome</h1>
+        <p>Pendaftaran kegiatan Mahasiswa</p>
+
+        <nav aria-label="Navigasi utama">
+            <a href="index.html">Beranda</a>
+            <a href="kegiatan.html">Kegiatan</a>
+            <a href="daftar.html">Daftar</a>
+        </nav>
+    </header>
+
+        <section>
+            <h2>Pendaftaran Kegiatan</h2>
+            <p class="notice">Kolom bertanda wajib harus diisi.</p>
+
+            <form class="card" id="formPendaftaran" action="#" method="get">
+                <label for="nama">Nama lengkap (wajib)</label>
+                <input id="nama" name="nama" type="text" autocomplete="name" required>
+
+                <label for="email">Email (wajib)</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+
+                <label for="telepon">Telepon (wajib)</label>
+                <input id="telepon" name="telepon" type="tel" autocomplete="tel" required>
+
+                <label for="tiket">Jumlah Tiket (wajib)</label>
+                <input id="tiket" name="tiket" type="number" min="1" max="5" step="1" required>
+
+                <label for="prodi">Program studi (wajib)</label>
+                <select id="prodi" name="prodi" required>
+                    <option value="">Pilih program studi</option>
+                    <option value="trpl">D4 TRPL</option>
+                    <option value="ti">D3 Teknologi Informasi</option>
+                </select>
+
+                <fieldset>
+                    <legend>Mode kehadiran (wajib)</legend>
+                    <input id="luring" name="mode" type="radio" value="luring" required>
+                    <label for="luring" class="label-inline">Luring</label>
+
+                    <input id="daring" name="mode" type="radio" value="daring">
+                    <label for="daring" class="label-inline">Daring</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Minat Topik</legend>
+
+                    <input id="topik-html" name="topik" type="checkbox" value="html">
+                    <label for="topik-html" class="label-inline">HTML</label>
+
+                    <input id="topik-aksesibilitas" name="topik" type="checkbox" value="aksesibilitas">
+                    <label for="topik-aksesibilitas" class="label-inline">Aksesibilitas</label>
+                </fieldset>
+
+                <label for="catatan">Catatan (opsional)</label>
+                <textarea id="catatan" name="catatan" rows="4" maxlength="300"></textarea>
+
+                <!-- Tombol Daftar -->
+                <button type="submit">Daftar</button>
+
+            </form>
+
+            <!-- Notifikasi -->
+            <div id="notifikasi" style="display: none;">
+                Selamat, jawaban Anda telah diterima.
+            </div>
+
+        </section>
+    </main>
+
+    <script src="main.js" defer></script>
+
+    <!-- Script untuk notifikasi -->
+    <script>
+        document.getElementById("formPendaftaran").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            document.getElementById("notifikasi").style.display = "block";
+        });
+    </script>
+
+</body>
+
+</html>

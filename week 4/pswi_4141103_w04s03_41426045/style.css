@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #1a1b1c;
+  background: #ff9191;
+}
+
+header, main, footer {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background: rgb(252, 254, 254);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+h1 {
+  color: #297a6a;
+}
+
+.notice {
+  color: #175cd3;
+  font-weight: 500;
+}
+
+* Card Form dibuat responsif memenuhi wadah main 
+.card {
+  width: 100%;
+  padding: 1.5rem;
+  border: 2px solid #33efca;
+  border-radius: 8px;
+  background: #ffffff;
+  margin-top: 1rem;
+}
+
+
+/* Pengaturan label dan input agar rapi ke bawah */
+.card label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.card input[type="text"],
+.card input[type="email"],
+.card input[type="tel"],
+.card input[type="number"],
+.card select,
+.card textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #54cab1;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+/* Pengecualian label untuk Radio & Checkbox */
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+fieldset legend {
+  font-weight: bold;
+}
+
+.card label.label-inline {
+  display: inline;
+  font-weight: normal;
+  margin-right: 1.5rem;
+}
+
+/* Tombol */
+button {
+  padding: 0.75rem 1rem;
+  color: white;
+  background: #293d7a;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  width: 100%;
+  margin-top: 1.25rem;
+}
+
+button:hover {
+  background: #1e2c59;
+}

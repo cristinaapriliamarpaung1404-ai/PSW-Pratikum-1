@@ -1,0 +1,244 @@
+/* =========================
+   1. PENGATURAN DASAR
+========================= */
+
+:root {
+    --brand: #176b87;
+    --space: 1rem;
+    --space-2: 1rem;
+    --surface: #ffffff;
+    --ink: #243244;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 62rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--ink);
+    background-color: #fffcfe;
+    background-image: url("images/images (1).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* =========================
+   2. HEADER DAN KONTEN
+========================= */
+
+header,
+main {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto 1rem;
+    padding: 1rem;
+    background: var(--surface);
+    border: 1px solid #ddd;
+}
+
+h1 {
+    color: var(--brand);
+    font-size: clamp(1.75rem, 1.2rem + 2vw, 3rem);
+    line-height: 1.2;
+}
+
+h2,
+h3 {
+    color: var(--brand);
+}
+
+p {
+    max-width: 65ch;
+}
+
+/* =========================
+   3. NAVIGASI FLEXBOX
+========================= */
+
+nav {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid var(--brand);
+    border-radius: 6px;
+    background-color: var(--surface);
+    color: var(--brand);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--brand);
+    color: #ffffff;
+}
+
+/* =========================
+   4. GAMBAR KEGIATAN
+========================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* =========================
+   5. KATALOG GRID
+========================= */
+
+.catalog {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 0;
+    padding: var(--space-2);
+    background: var(--surface);
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.card h2,
+.card h3 {
+    overflow-wrap: anywhere;
+}
+
+.card h2,
+.card h3,
+.card p {
+    margin: 0;
+}
+
+.card a {
+    align-self: flex-start;
+}
+
+/* =========================
+   6. FORM DAN TOMBOL
+========================= */
+
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+button {
+    padding: 0.75rem 1rem;
+    color: #ffffff;
+    background: var(--brand);
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3cc0ef;
+}
+
+/* =========================
+   7. FOKUS KEYBOARD
+========================= */
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+nav a:focus-visible,
+.card a:focus-visible {
+    outline: 3px solid var(--brand);
+    outline-offset: 3px;
+}
+
+/* =========================
+   8. LAYOUT RESPONSIF
+========================= */
+
+/* Tampilan tablet dan desktop */
+@media (min-width: 48rem) {
+    .catalog {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+}
+
+/* Tampilan layar kecil */
+@media (max-width: 600px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    header,
+    main {
+        padding: 0.75rem;
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+
+    .nav-list {
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+/* =========================
+   9. PREFERENSI GERAK
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .card,
+    nav a {
+        transition: none;
+    }
+}

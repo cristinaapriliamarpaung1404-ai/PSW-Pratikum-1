@@ -1,0 +1,24 @@
+Nama : Cristina Aprilia Marpaung
+NIM : 41426045
+Prodi : TRPL
+
+
+Git adalah sistem pengontrol versi (Version Control System) yang digunakan untuk mencatat, menyimpan, dan mengelola perubahan kode dalam sebuah proyek. Git dapat diibaratkan seperti mesin waktu yang membantu kita melihat riwayat perubahan dan kembali ke versi sebelumnya jika terjadi kesalahan.
+
+Fungsi Utama Git :
+1. Menyimpan Riwayat Perubahan 
+Git mencatat perubahan pada file sehingga kita bisa melihat riwayat pekerjaan dan kembali ke versi sebelumnya jika terjadi kesalahan.
+
+2. Membuat Branch (Cabang)  
+Branch memungkinkan kita mencoba fitur baru atau memperbaiki kode tanpa mengganggu kode utama.
+
+3. Memudahkan Kolaborasi
+Git membantu beberapa orang mengerjakan proyek yang sama dan menggabungkan perubahan mereka dengan lebih teratur.
+
+4. Menghubungkan Proyek dengan GitHub
+Git dapat digunakan untuk mengirim kode ke platform online seperti GitHub atau GitLab. Dengan begitu, kode dapat disimpan secara online dan dibagikan kepada orang lain.
+
+AI Use Statement :
+Saya menggunakan ChatGPT sebagai alat bantu untuk memahami konsep Git, seperti branch, commit, merge, dan code review. AI juga membantu menjelaskan perintah Git serta memberikan saran untuk memperbaiki kode HTML pada halaman `daftar.html`.
+
+Setiap saran yang diberikan diperiksa kembali dan disesuaikan dengan kebutuhan praktikum. Pengujian kode dan perintah Git dilakukan secara langsung untuk memastikan hasilnya sesuai dengan tujuan tugas.
